@@ -57,6 +57,3 @@ RUN sudo apt-get autoremove -y \
 # # Use UTF-8 encoding.
 ENV LANG "en_US.UTF-8"
 ENV LC_CTYPE "en_US.UTF-8"
-
-RUN sudo systemctl enable redis-server
-RUN sudo systemctl enable mongod

@@ -47,7 +47,8 @@ RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | 
 RUN curl -s "https://get.sdkman.io" | bash \
     && source "$HOME/.sdkman/bin/sdkman-init.sh" \
     && sdk version \
-    && sdk install java 11.0.11.hs-adpt && sdk install sbt
+    && sdk install java 17.0.3-tem \
+    && sdk install sbt
 
 # Install bloop
 RUN cs install bloop --only-prebuilt=true \

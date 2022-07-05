@@ -31,10 +31,14 @@ RUN sudo apt-get update && sudo apt update \
   git-all \
   mongodb-org \ 
   parallel \ 
+  python3.9 \
   redis-server \
   unzip \
   vim \
   zip
+
+## pymongo needed for lila-db-seed
+RUN python3.9 -m pip install pymongo
 
 # nvm => node => yarn
 RUN wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash \

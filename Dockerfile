@@ -31,6 +31,7 @@ RUN sudo apt-get update && sudo apt update \
   git-all \
   mongodb-org \ 
   parallel \ 
+  python3-pip \
   python3.9 \
   redis-server \
   unzip \

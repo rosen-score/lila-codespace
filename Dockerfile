@@ -56,6 +56,9 @@ RUN curl -s "https://get.sdkman.io" | bash \
     && sdk install java 17.0.3-tem \
     && sdk install sbt
 
+# Install scala formatter
+RUN cs install scalafmt
+
 # Install bloop
 RUN cs install bloop --only-prebuilt=true \
     && echo 'export PATH="$PATH:/home/lichess/.local/share/coursier/bin"' >> ~/.bashrc

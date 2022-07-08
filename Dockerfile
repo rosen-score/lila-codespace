@@ -57,10 +57,7 @@ RUN curl -s "https://get.sdkman.io" | bash \
     && sdk install sbt
 
 # Install scala formatter
-# Run it once to pre-download
-RUN cs install scalafmt \
-    && touch /tmp/empty.scala \
-    && scalafmt /tmp/empty.scala
+RUN cs install scalafmt
 
 # Install bloop
 RUN cs install bloop --only-prebuilt=true \

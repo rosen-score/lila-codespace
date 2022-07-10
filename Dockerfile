@@ -56,6 +56,9 @@ RUN curl -s "https://get.sdkman.io" | bash \
     && sdk install java 17.0.3-tem \
     && sdk install sbt
 
+# Install Rust and Cargo, needed for fishnet
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # Install scala formatter
 RUN cs install scalafmt
 

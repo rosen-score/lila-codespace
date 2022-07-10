@@ -57,7 +57,7 @@ RUN curl -s "https://get.sdkman.io" | bash \
     && sdk install sbt
 
 # Install Rust and Cargo, needed for fishnet
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # Install scala formatter
 RUN cs install scalafmt
